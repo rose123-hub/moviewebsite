@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mofans</title>
+    <link rel="stylesheet" href="moviewebsite.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mofans</h1>
+        <p>Explore and discover your favorite movies</p>
+    </header>
+
+    <section id="movie-list" class="movie-list">
+        <div class="movie-card" onclick="showDetails('movie1')">
+            <img src="C:\Users\rjros\Downloads\moana.jpg" alt="Movie 1">
+            <h2>Moana</h2>
+        </div>
+        <div class="movie-card" onclick="showDetails('movie2')">
+            <img src="C:\Users\rjros\Downloads\kunfu panda..jpg" alt="Movie 2">
+            <h2>Kung Fu Panda 4</h2>
+        </div>
+        <div class="movie-card" onclick="showDetails('movie3')">
+            <img src="C:\Users\rjros\Downloads\spiderman.jpg" alt="Movie 3">
+            <h2>Spider-Man:Far From Home</h2>
+        </div>
+        <!-- Add more movies as needed -->
+    </section>
+
+    <section id="movie-details" class="movie-details">
+        <h2 id="movie-title"></h2>
+        <p id="movie-description"></p>
+        <p id="movie-release"></p>
+        <button onclick="closeDetails()">Close</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mofans. All Rights Reserved.</p>
+    </footer>
+
+    <script src="moviewebsite.jsx"></script>
+</body>
+</html>
